@@ -129,8 +129,8 @@ print(classification_report(y_test, y_pred))
             Epoch 00118: early stopping
                           precision    recall  f1-score   support
 
-                       0       0.81      1.00      0.89      5255  // 0 => %81 true result
-                       1       0.91      0.08      0.14      1345  // 1 => %91 true result
+                       0       0.83      1.00      0.89      5255  // 0 => %83 true result
+                       1       0.94      0.08      0.14      1345  // 1 => %94 true result
 
                 accuracy                           0.81      6600
                macro avg       0.86      0.54      0.52      6600
