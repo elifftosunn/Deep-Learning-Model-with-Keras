@@ -17,7 +17,12 @@ from tensorflow.keras.callbacks import EarlyStopping
 datas = pd.read_csv("Churn_Modelling.csv",on_bad_lines='skip')
 #print(datas.columns)
 #print(datas.isnull().sum()) # no missing value
-print(datas.corr())
+
+plt.figure(figsize=(15,15))
+sns.heatmap(datas.corr(), annot=True, fmt=".2f",cbar=True)
+plt.xticks(rotation=90)
+plt.yticks(rotation=0)
+plt.show()
 
 X = datas.iloc[:,3:-1].values
 Y = datas.iloc[:,-1:].values
