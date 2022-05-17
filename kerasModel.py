@@ -90,7 +90,7 @@ earlyStopping = EarlyStopping(monitor="val_loss",mode="min",verbose=1,patience=2
 history = model.fit(x = X_train,y = y_train, validation_data=(X_test,y_test),
           batch_size=50,epochs=300,shuffle=True,callbacks=[earlyStopping])
 #lostData = pd.DataFrame(model.history.history)
-
+#lostData.plot()
 
 # Plot training & validation accuracy values
 plt.figure(figsize=(14,3))
@@ -138,13 +138,3 @@ print(classification_report(y_test, y_pred))
     
     
 '''
-
-
-
-
-
-
-
-
-
-
