@@ -131,7 +131,7 @@ print(classification_report(y_test, y_pred))
     
             Classification Report 
             
-            Epoch 00105: early stopping
+            Epoch 00105: Early Stopping
               precision    recall  f1-score   support
 
            0       0.83      1.00      0.90      5255   // 0 => %83 true result
